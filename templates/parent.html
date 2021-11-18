@@ -16,7 +16,15 @@
 		<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
 		<script type="text/javascript" href="{{ url_for('static', filename='js/sample.js') }}"></script>
 		{% block head %}{% endblock %}
-
+			<div class="container">
+        <div class="row home_img">
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="card" >
+                   <img src="{{url_for('static', filename='./images/logo-negro-05-1.png')}}" />
+                </div>
+            </div>
+          
+    </div>	
 
 	</head>
 <body>
@@ -34,6 +42,7 @@
 		</div>
 		
 	</div>
+
 	
 	{% include "snippets/footer.html" %}
 	
